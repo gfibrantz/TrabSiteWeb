@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+    <script src="jsindex.js"></script>
+    <title>RestauraCAR</title>
+</head>
+
+<body onresize="redimensionar()"></body>
+<header>
+    <h1>
+        <div class="flex-container">
+            <a class="home" href="login.html"><i class="fa fa-lock"></i><p>Login</p></a>
+        </div>
+        <div class="flex-containerm">
+            <a class="homemobile" href="login.html"><i class="fa fa-lock"></i><p>Login</p></a>
+        </div>
+        <div class="flex-containerm2">
+            <button<a onclick="mostrarNav()" class="navmobile"><i class="fa fa-bars"></i></a>
+                </button>
+        </div>
+        RestauraCAR</h1>
+</header>
+
+<nav id="nav">
+    <ul class="menu">
+        <li><a href="about.html">Sobre Nós</a></li>
+        <li><a href="venda.html">Veículos a Venda</a></li>
+        <li><a href="restauracao.html">Processo de Restauração</a></li>
+        <li><span>Customização <span onclick="abrirSubmenu()">
+                <i class="fa fa-caret-square-o-down"></i>
+           </span></span>
+            <ul class="submenu">
+                <li class="l1"><a href="suspensao.html">Suspensão</a></li>
+                <li class="l2"><a href="motor.html">Motor</a></li>
+                <li class="l3"><a href="pintura.html">Pintura</a></li>
+            </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+</nav>
+
+<br>
+<main>
+    <div class="imagem">
+        <img alt="Mustang Bullit 1968" src="img/mustang1.jpg">
+        <img alt="Mustang Bullit 2019" src="img/mustang2.jpg">
+    </div>
+</main>
+<footer>
+    <p id="footer1"><b>RestauraCAR Serviços Automotivos</b>
+        <p id="footer2">Direitos Reservados © Implantado por ValeDesign</p>
+</footer>
+</body>
+
+</html>

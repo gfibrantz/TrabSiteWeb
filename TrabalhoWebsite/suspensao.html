@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesusp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+
+    <title>Suspensões</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <div class="flex-container">
+                <a class="home" href="index.html"><i class="fa fa-home"></i><p>Home</p></a>
+            </div>
+            RestauraCAR</h1>
+        <h2>
+            Suspensões
+        </h2>
+        <hr> <br>
+        <div id="menu-tabela">
+            <div class="table">
+                <ul id="horizontal-lista">
+                    <li>Troca de Amortecedores</li>
+                    <li>Suspensão a Ar</li>
+                    <li>Molas Esportivas</li>
+                    <li>Manutenção em Geral</li>
+                </ul>
+            </div>
+        </div>
+        <div class="textoprincipal">
+
+            <p> No mercado desde 1968 prestando serviços diferenciados, RestauraCAR é uma empresa que conquistou a confiança dos seus clientes pela sua reconhecida competência no trabalho com suspensões.<br> A empresa é totalmente especializada em todos os
+                tipos de suspensão, seja para veículos comuns, a gás, pick-ups, ou preparados para competições. A razão do grande sucesso da empresa está na qualidade dos seus serviços.
+            </p>
+
+        </div>
+    </header>
+    <div class="container">
+        <img class="slides" src="img/suspensao2.png" style="width:50%" , height="400px">
+        <img class="slides" src="img/suspensao1.jpg" style="width:50%" , height="400px">
+        <img class="slides" src="img/suspensao3.jpg" style="width:50%" , height="400px">
+        <div>
+            <div class="botoes">
+                <button onclick="slide(-1)">❮ Anterior</button>
+                <button onclick="slide(1)">Próximo ❯</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        mostrar(slideIndex);
+
+        function slide(n) {
+            mostrar(slideIndex += n);
+        }
+
+        function mostrar(n) {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <footer>
+        <p id="footer1"><b>RestauraCAR Serviços Automotivos</b>
+            <p id="footer2">Direitos Reservados © Implantado por ValeDesign</p>
+    </footer>
+</body>
+
+</html>
