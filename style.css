@@ -1,0 +1,224 @@
+    .homemobile {
+        display: none
+    }
+    
+    .navmobile {
+        display: none;
+    }
+    
+    h1 {
+        background-color: darkblue;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 5px;
+        color: dodgerblue;
+        font-family: 'Candal';
+        font-size: 42px;
+    }
+    
+    .formatado {
+        display: inline-block;
+        border-radius: 5px;
+        background-color: dodgerblue;
+        height: 51px;
+    }
+    
+    nav {
+        border-radius: 5px;
+        background-color: dodgerblue;
+        height: 51px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 25px;
+        font-family: 'Candal';
+        padding: 0;
+        margin: 0;
+    }
+    
+    .menu li {
+        color: darkblue;
+        text-align: center;
+        line-height: 50px;
+    }
+    
+    .menu li:hover {
+        border: 1px solid darkblue;
+        border-radius: 5px;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: darkblue;
+    }
+    
+    .menu ul {
+        display: none;
+    }
+    
+    @media screen and (min-width: 800px) {
+        .menu li:hover ul {
+            display: flex;
+            flex-direction: column;
+            width: 195px;
+            margin-left: 0px;
+            margin-right: 0px;
+            position: absolute;
+            background-color: dodgerblue;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        .menu i {
+            display: none;
+        }
+    }
+    
+    .carro {
+        height: 500px;
+        border-radius: 10px;
+        width: 1000px;
+    }
+    
+    @media screen and (max-width: 560px) {
+        nav,
+        .home,
+        .flex-container,
+        .flex-container:hover {
+            display: none;
+        }
+        .homemobile,
+        .navmobile {
+            display: inline;
+        }
+        .imagem img {
+            width: 100%;
+            height: 350px;
+        }
+        .formatsub {
+            display: block;
+            flex-direction: column;
+            width: 130px;
+            margin-left: 35%;
+            background-color: blue;
+            font-size: 10px;
+        }
+        h1 {
+            margin-bottom: 1px;
+        }
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+            background-color: blue;
+        }
+        nav a {
+            color: #75a9f9;
+        }
+        nav li {
+            color: #75a9f9;
+        }
+        nav span {
+            color: #75a9f9;
+        }
+        .flex-containerm {
+            position: absolute;
+            right: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            width: 60px;
+        }
+        .flex-containerm:hover {
+            border: 2px solid #75a9f9;
+            border-radius: 5px;
+            margin-right: 2%;
+        }
+        .flex-containerm a {
+            color: #75a9f9;
+            text-decoration: none;
+        }
+        .flex-containerm p {
+            font-size: 8px;
+        }
+        .flex-containerm2 {
+            position: absolute;
+            left: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            width: 60px;
+        }
+        .flex-containerm2:hover {
+            border: 2px solid #75a9f9;
+            border-radius: 5px;
+        }
+        .flex-containerm2 a {
+            color: #75a9f9;
+            text-decoration: none;
+        }
+        .flex-containerm2 p {
+            font-size: 8px;
+        }
+    }
+    
+    .flex-container {
+        position: absolute;
+        left: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 80px;
+    }
+    
+    .flex-container:hover {
+        border: 2px solid #75a9f9;
+        border-radius: 5px;
+    }
+    
+    a {
+        color: #75a9f9;
+        text-decoration: none;
+    }
+    
+    .flex-container p {
+        font-size: 10px;
+    }
+    
+    @media screen and (min-width: 560px) {
+        .imagem {
+            width: 100%;
+        }
+        .imagem img {
+            width: 49.8%;
+            height: 500px;
+        }
+    }
+    
+    footer {
+        font-family: 'Candal';
+        margin-top: 10%;
+    }
+    
+    #footer1 {
+        margin-bottom: 0;
+        font-size: 15px;
+        text-align: center;
+        color: #033076;
+    }
+    
+    #footer2 {
+        margin-top: 5px;
+        font-size: 8px;
+        text-align: center;
+        color: #033076;
+    }

@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylepintura.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+    <title>Pintura</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <div class="flex-container">
+                <a class="home" href="index.html"><i class="fa fa-home"></i><p>Home</p></a>
+            </div>
+            RestauraCAR</h1>
+        <h2>
+            Pintura
+        </h2>
+    </header>
+    <hr> <br>
+    <div id="menu-tabela">
+        <div class="table">
+            <ul id="horizontal-lista">
+                <li>Retoques</li>
+                <li>Customização</li>
+                <li>Envelopamento</li>
+                <li>Adesivagem</li>
+            </ul>
+        </div>
+    </div>
+    <div class="textoprincipal">
+
+        <p> Pintura sólida, pintura metálica, pintura perolizada. Do básico até as técnicas mais avançadas,<br> a RestauraCAR vem renovando suas técnicas de pinturas.<br> Além disso, utiliza os principais fornecedores de tintas. Assim, além de serviço de
+            qualidade oferecemos componentes de qualidade.<br> Tudo isto para garantir que a harmonia e espírito do veículo não se perca.
+        </p>
+
+    </div>
+    <div class="container">
+        <img class="slides" src="img/pintura1.jpg" style="width:50%" , height="400px">
+        <img class="slides" src="img/pintura2.jpg" style="width:50%" , height="400px">
+        <img class="slides" src="img/pintura3.jpg" style="width:50%" , height="400px">
+        <div>
+            <div class="botoes">
+                <button onclick="slide(-1)">❮ Anterior</button>
+                <button onclick="slide(1)">Próximo ❯</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        mostrar(slideIndex);
+
+        function slide(n) {
+            mostrar(slideIndex += n);
+        }
+
+        function mostrar(n) {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <footer>
+        <p id="footer1"><b>RestauraCAR Serviços Automotivos</b>
+            <p id="footer2">Direitos Reservados © Implantado por ValeDesign</p>
+    </footer>
+</body>
+
+</html>

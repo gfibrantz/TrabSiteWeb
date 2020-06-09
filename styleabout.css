@@ -1,0 +1,193 @@
+h1 {
+    border: 2px solid darkblue;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    color: #75a9f9;
+    font-family: 'Candal';
+    font-size: 40px;
+}
+
+.flex-container {
+    position: absolute;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+}
+
+.flex-container:hover {
+    border: 2px solid #75a9f9;
+    border-radius: 5px;
+}
+
+.flex-container a {
+    color: #033076;
+    text-decoration: none;
+}
+
+.flex-container p {
+    font-size: 10px;
+}
+
+h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #033076;
+    font-size: 35px;
+    font-family: 'Candal';
+}
+
+hr {
+    width: 50%;
+    border-color: #75a9f9;
+}
+
+th {
+    text-align: right;
+}
+
+.tabela {
+    display: table;
+    border-style: groove;
+    border-width: 3px;
+    margin-left: 45%;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Candal';
+}
+
+.textoprincipal {
+    height: auto;
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'Candal';
+}
+
+#frase {
+    text-align: center;
+}
+
+.row {
+    margin-left: 10%;
+    font-family: 'Candal';
+    font-size: 11px;
+}
+
+.column {
+    float: left;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+h5 {
+    font-size: 16px;
+    font-family: 'Candal';
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+footer {
+    font-family: 'Candal';
+}
+
+#footer1 {
+    margin-bottom: 0;
+    font-size: 15px;
+    text-align: center;
+    color: #033076;
+}
+
+#footer2 {
+    margin-top: 2px;
+    font-size: 8px;
+    text-align: center;
+    color: #033076;
+}
+
+h5 {
+    text-align: center;
+    color: #033076;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 560px) {
+    textarea {
+        width: 80%;
+    }
+    .tabela {
+        margin-left: 30%;
+    }
+    .flex-container {
+        left: 3%;
+    }
+    .column {
+        width: 100%;
+        display: block;
+    }
+    .row {
+        margin-left: 0;
+    }
+}

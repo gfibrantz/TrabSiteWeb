@@ -1,0 +1,127 @@
+h1 {
+    border: 2px solid darkblue;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    color: #75a9f9;
+    font-family: 'Candal';
+    font-size: 40px;
+}
+
+.flex-container {
+    position: absolute;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+}
+
+.flex-container:hover {
+    border: 2px solid #75a9f9;
+    border-radius: 5px;
+}
+
+h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #033076;
+    font-size: 35px;
+    font-family: 'Candal';
+}
+
+hr {
+    width: 50%;
+    border-color: #75a9f9;
+}
+
+p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Candal';
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Candal';
+    font-size: 13px;
+}
+
+label {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+    color: #033076;
+}
+
+input {
+    width: 300px;
+    border: 2px solid #033076;
+}
+
+textarea::placeholder {
+    text-align: right;
+    transform: translateY(280px);
+}
+
+#submit {
+    color: #033076;
+    background-color: #75a9f9;
+    border-radius: 5px;
+    width: 125px;
+    height: 60x;
+    font-family: 'Candal';
+}
+
+#limpar {
+    font-family: 'Candal';
+}
+
+#comentario {
+    display: inline;
+}
+
+p {
+    color: #033076;
+}
+
+footer {
+    font-family: 'Candal';
+}
+
+#footer1 {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+#footer2 {
+    margin-top: 2px;
+    font-size: 8px;
+}
+
+a {
+    color: #033076;
+    text-decoration: none;
+}
+
+.flex-container p {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 560px) {
+    textarea {
+        width: 80%;
+    }
+    .flex-container {
+        left: 3%;
+    }
+}
